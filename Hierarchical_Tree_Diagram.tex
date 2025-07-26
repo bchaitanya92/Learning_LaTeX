@@ -1,0 +1,28 @@
+%Simple Tree Diagram or Hierarchical Structure using Tikz Library
+
+\documentclass{article}
+\usepackage{tikz}
+\usetikzlibrary{trees}
+\begin{document}
+\title{Simple Tree Diagram or Hierarchical Structure using Tikz Library}
+\date{}
+\maketitle
+\begin{center}
+\begin{tikzpicture}[
+level 1/.style={sibling distance=7cm},
+level 2/.style={sibling distance=4cm},
+level distance=2cm,
+every node/.style={font=\large} 
+]
+\node {Root/Parent}
+child { node {Child 1}
+child { node {Grandchild 1.1} }
+child { node {Grandchild 1.2} }
+}
+child { node {Child 2}
+child { node {Grandchild 2.1} }
+child { node {Grandchild 2.2} }
+};
+\end{tikzpicture}
+\end{center}
+\end{document}
