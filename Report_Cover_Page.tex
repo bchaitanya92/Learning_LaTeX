@@ -1,0 +1,78 @@
+% Develop a LaTeX script to create the Certificate Page of the Report [Use suitable commands to leave the blank spaces for user entry] 
+
+\documentclass[a4paper]{article}
+
+% Load color package with required options only
+\usepackage[usenames,dvipsnames]{color}
+
+% Other package loads
+\usepackage{tcolorbox}
+\usepackage{colortbl}
+
+\begin{document}
+	\begin{titlepage}
+		\begin{tcolorbox}[colframe=black, colback=white, boxrule=2pt, arc=0pt,
+			outer arc=0pt]
+			\begin{center}
+				\vspace{1cm}
+				\textbf\Large{K S SCHOOL OF ENGINEERING AND MANAGEMENT \\[4pt]
+					15,Mallasandra,off.Kanakapura Road,Bengaluru-560109 \\[7pt]
+					DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING\\
+				}
+				\vspace{1cm}
+				\includegraphics[width=0.3\textwidth]{logo1.jpeg}\\
+				\vspace{1cm}
+				\textbf{\underline{CERTIFICATE}}
+			\end{center}
+			This is to certify that \textbf{\color{blue}{Bourisetti. Chaitanya}} has submitted
+			the Project Phase 2 Report on \textbf{\color{blue}{Early Detection of OCD
+					Symptoms Using Machine Learning}} for the fulfillment of \textbf{IV
+				semester Computer Science and Engineering}, with an Undergraduate Course
+			prescribed by the \textbf{Visvesvaraya Technological University} for the
+			academic year 2023-2024. The Project Phase 2 Report has been approved as
+			it satisfies the academic requirements in respect of work guidelines
+			prescribed for the Bachelor of Engineering degree.
+			\vspace{2cm}
+			
+			\noindent % Prevent indentation
+			\begin{minipage}[t]{0.5\textwidth}
+				\begin{tabular}[t]{@{}c}
+					\rule{10em}{0.4pt}\\
+					\textbf{Mrs. Nagaveni B N,} \\
+					Associate Professor \&amp; Guide, \\
+					Department of CSE, \\
+					KSSEM, Bengaluru.\\
+				\end{tabular}
+			\end{minipage}%
+			\begin{minipage}[t]{0.5\textwidth}
+				\begin{flushright}
+					\begin{tabular}[t]{@{}c}
+						\rule{10em}{0.4pt}\\
+						\textbf{Mrs. R S Geethanjali,} \\
+						Assistant Professor \&amp; Guide, \\
+						Department of CSE, \\
+						KSSEM, Bengaluru.\\
+					\end{tabular}
+				\end{flushright}
+			\end{minipage}
+			
+			\vspace{1.5cm}
+			\noindent % Prevent indentation
+			\begin{minipage}[t]{0.5\textwidth}
+				\begin{tabular}[t]{@{}c}
+					\rule{10em}{0.4pt}\\
+					\textbf{Examiner 1} 
+				\end{tabular}
+			\end{minipage}%
+			\begin{minipage}[t]{0.5\textwidth}
+				\begin{flushright}
+					\begin{tabular}[t]{@{}c}
+					\rule{10em}{0.4pt}\\
+					\textbf{Examiner 2} 
+					\end{tabular}
+				\end{flushright}
+			\end{minipage}
+			
+		\end{tcolorbox}
+	\end{titlepage}
+\end{document}

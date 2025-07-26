@@ -1,0 +1,47 @@
+% Develop a LaTeX script to create a simple document that consists of 2 sections [Section 1, Section 2]  and a paragraph with dummy text in each section. And also include the header [title of document] and footer [institute name, page number] in the document. 
+
+\documentclass[12pt,a4paper]{article}
+\usepackage[left=2cm,right=2cm,top=2cm,bottom=2cm]{geometry}
+\usepackage{fancyhdr}
+\title{Simple Document on LATEX}
+\author{B. Chaitanya}
+\begin{document}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead{}
+\fancyhead[R]{Technical Writing using LATEX}
+\fancyfoot{}
+\fancyfoot[LO,LE]{KS School of Engineering and Management}
+\fancyfoot[R]{\thepage}
+\section{What is LaTeX?}
+LaTeX, pronounced Lah-tek or Lay-tek, is a software system for high-quality typesetting, particularly for academic and scientific documents. Unlike WYSIWYG (What You See Is What You Get) word processors like Microsoft Word, LaTeX separates content and formatting. You write your content with LaTeX commands sprinkled in, and then a program processes it to generate a beautifully formatted document, typically a PDF.
+\section{Features of LaTeX}
+\textbf{LATEX is a markup language and is a free licensed software.}
+\begin{itemize}
+	\item With LaTeX, you write the content and use commands to specify the structure. This frees you from constantly formatting and allows you to concentrate on your writing.	
+	\item LaTeX excels at producing high-quality mathematical equations, tables, figures, and citations, making it ideal for technical documents.	
+	\item LaTeX is free to use and has a large, supportive community with extensive documentation and online resources.
+\end{itemize}
+
+\section{Advantages of LaTeX}
+\begin{itemize}
+	\item Consistent Formatting
+	\item Superior Math Typesetting
+	\item Extensive Bibliography Management
+	\item Version Control Friendly
+\end{itemize}
+\section{Disadvantages of LaTeX}
+\begin{itemize}
+	\item Learning Curve
+	\item Less Intuitive Interface
+	\item Limited Live Editing
+\end{itemize}
+\section{Applications of LaTeX}
+\begin{itemize}
+	\item Scientific Papers and Books
+	\item Technical Reports and Manuals
+	\item Presentations
+	\item Resumes and Cover Letters
+\end{itemize}
+
+\end{document}
